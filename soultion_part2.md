@@ -1,4 +1,4 @@
-# Infrastructure Requirement.
+# Infrastructure and App hosting Requirements.
 ## You have a choice of which hosting provider it is deployed with?
    
 Infrastructure will be created on AWS cloud with below resources :
