@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: superservice
+spec:
+  selector:
+    app: superservice
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

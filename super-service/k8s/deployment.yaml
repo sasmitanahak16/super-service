@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: superservice-deployment
+  labels:
+    app: superservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: superservice
+  template:
+    metadata:
+      labels:
+        app: superservice
+    spec:
+      containers:
+      - name: superservice
+        image: superservice:latest
+        ports:
+        - containerPort: 80
